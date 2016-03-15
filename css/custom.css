@@ -1,0 +1,30 @@
+body {
+  padding-top: 50px;
+  min-width: 100%;
+}
+/*.navbar {
+    background-color: pink;
+    border-color: pink;
+}*/
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+  min-width: 100%;
+}
+.about {
+  height: 500px;
+  background-color: green;
+  min-width: 100%;
+}
+.projects {
+  height: 500px;
+  background-color: blue;
+}
+.resume {
+  height: 500px;
+  background-color: pink;
+}
+.contact {
+  height: 500px;
+  background-color: red;
+}
