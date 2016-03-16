@@ -31,7 +31,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
@@ -42,38 +42,72 @@
     </nav>
 
     <!-- <div class="container"> -->
-
+    <div class="home">
+      <a id="home"></a>
       <div class="starter-template">
-        <h1>Jason Booras</h1>
+        <h1 id="name">Jason Booras</h1>
         <p class="lead">Web Developer.<br> Hire Me.. Please?</p>
-        </div>
-
-      <div class="about">
-        <a id="about" class="smooth"></a>
-          About goes here.
       </div>
+    </div>
 
-      <div class="projects">
-        <a id="projects" class="smooth"></a>
-          Projects here.
-      </div>
+    <div class="about">
+      <a id="about"></a>
+        About goes here.
+    </div>
 
-      <div class="resume">
-        <a id="resume" class="smooth"></a>
-          Resume here.
-      </div>
+    <div class="projects">
+      <a id="projects"></a>
+        Projects here.
+    </div>
 
-      <div class="contact">
-        <a id="contact" class="smooth"></a>
-          jasonbooras@gmail.com
-      </div>
+    <div class="resume">
+      <a id="resume"></a>
+        Resume here.
+    </div>
+
+    <div class="contact">
+      <a id="contact"></a>
+        <ul>
+          <li><a href="mailto:jasonbooras@gmail.com">Email</a></li>
+          <li><a href="https://github.com/jsnbrs">GitHub</a></li>
+          <li><a href="https://twitter.com/JasonBooras">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/jasonbooras">LinkedIn</a></li>
+        </ul>
+    </div>
 
     <!-- </div>/.container -->
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      // Add scrollspy to <body>
+      $('body').scrollspy({target: ".navbar", offset: 50});   
+
+      // Add smooth scrolling on all links inside the navbar
+      $("#navbar a").on('click', function(event) {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+       
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      });
+    });
+    </script>
+
   </body>
 </html>
