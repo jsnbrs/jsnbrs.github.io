@@ -6,6 +6,8 @@ body {
     background-color: pink;
     border-color: pink;
 }*/
+
+/*header*/
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -16,20 +18,24 @@ body {
   height: 100%;
   opacity: .9;
   background: url("http://i.huffpost.com/gen/3112924/original.jpg") no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
   color: white;
   height: 500px;
 }
+
 #name {
   padding-top: 144px;
 }
+
+/*end header*/
+
+/*main content divs*/
 .about {
-  height: 500px;
-  background-color: green;
+  height: 325px;
   min-width: 100%;
+}
+#about {
+  padding-top: 65px;
 }
 .projects {
   height: 500px;
@@ -40,6 +46,15 @@ body {
   background-color: pink;
 }
 .contact {
-  height: 500px;
+  height: 325px;
   background-color: red;
 }
+/*end main content divs*/
+
+/*center content*/
+/*.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+/*center content*/
