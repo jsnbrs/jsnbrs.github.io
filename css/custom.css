@@ -2,10 +2,19 @@ body {
   padding-top: 50px;
   min-width: 100%;
 }
-/*.navbar {
-    background-color: pink;
-    border-color: pink;
-}*/
+/*navbar*/
+.navbar {
+  transition: all 0.8s ease-out;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0);
+}
+
+nav.navbar.navbar-default {
+    border-bottom: none;
+}
+/*end navbar*/
 
 /*header*/
 .starter-template {
@@ -58,3 +67,4 @@ body {
   margin-right: auto;
 }*/
 /*center content*/
+
