@@ -39,17 +39,21 @@ nav.navbar.navbar-default {
   height: 325px;
   min-width: 100%;
 }
+
 #about {
   padding-top: 65px;
 }
+
 .projects {
   height: 500px;
   background-color: blue;
 }
+
 .resume {
   height: 500px;
   background-color: pink;
 }
+
 .contact {
   height: 325px;
   color: white;
@@ -63,6 +67,7 @@ nav.navbar.navbar-default {
 a {
   color: white;
 }
+
 a:link {
   text-decoration: none;
 }
@@ -71,6 +76,6 @@ a:link {
   padding-left: 0;
   margin-left: -5px;
   list-style: none;
-  padding-top: 160px;
+  padding-top: 110px;
 }
 /*end contact content*/
