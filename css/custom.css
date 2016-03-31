@@ -7,6 +7,7 @@ body {
 
 .navbar {
   transition: all 0.8s ease-out;
+  margin-bottom:0;
 }
 
 .navbar.scrolled {
@@ -24,6 +25,7 @@ nav.navbar.navbar-default {
 .jumbotron {
   background: url("../img/023_15.jpg") no-repeat center center scroll;
   color: white;
+  margin-bottom:0;
   height: 600px;
 }
 
@@ -36,46 +38,74 @@ nav.navbar.navbar-default {
 /*main content divs*/
 
 .about {
-  height: 325px;
+  height: 500px;
   min-width: 100%;
 }
 
-#about {
-  padding-top: 65px;
+.aboutpad {
+  padding-top: 145px;
 }
+
+/* end about */
 
 .projects {
-  height: 500px;
-  background-color: blue;
-}
-
-.resume {
-  height: 500px;
-  background-color: pink;
-}
-
-.contact {
-  height: 325px;
-  color: white;
+  height: 1000px;
   background-color: #333333;
+  color: white;
+  min-width: 100%;
 }
+
+.projectpad {
+  padding-top: 70px;
+  padding-bottom: 78px;
+}
+
+/* end projects */
+
+.skills {
+  height: 500px;
+  min-width: 100%;
+}
+
+.skillpad {
+  padding-top: 70px;
+  padding-bottom: 78px;
+}
+
+/* end sills */
 /*end main content divs*/
 
 
 /*contact content*/
 
+.contact {
+  height: 500px;
+  color: white;
+  background-color: #333333;
+}
+.contactpad {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
 a {
   color: white;
 }
-
 a:link {
   text-decoration: none;
 }
-
 .list-inline {
   padding-left: 0;
   margin-left: -5px;
   list-style: none;
-  padding-top: 110px;
+  /*padding-top: 110px;*/
 }
 /*end contact content*/
+
+.caption-btm{
+        background: rgba(0,0,0,0.6);
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        bottom: 4px;
+        color: #fff;
+    }
