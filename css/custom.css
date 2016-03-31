@@ -9,11 +9,9 @@ body {
   transition: all 0.8s ease-out;
   margin-bottom:0;
 }
-
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0);
 }
-
 nav.navbar.navbar-default {
   border-bottom: none;
 }
@@ -28,7 +26,6 @@ nav.navbar.navbar-default {
   margin-bottom:0;
   height: 600px;
 }
-
 #name {
   padding-top: 144px;
 }
@@ -41,7 +38,6 @@ nav.navbar.navbar-default {
   height: 500px;
   min-width: 100%;
 }
-
 .aboutpad {
   padding-top: 145px;
 }
@@ -54,7 +50,6 @@ nav.navbar.navbar-default {
   color: white;
   min-width: 100%;
 }
-
 .projectpad {
   padding-top: 70px;
   padding-bottom: 78px;
@@ -66,7 +61,6 @@ nav.navbar.navbar-default {
   height: 500px;
   min-width: 100%;
 }
-
 .skillpad {
   padding-top: 70px;
   padding-bottom: 78px;
@@ -97,15 +91,5 @@ a:link {
   padding-left: 0;
   margin-left: -5px;
   list-style: none;
-  /*padding-top: 110px;*/
 }
 /*end contact content*/
-
-.caption-btm{
-        background: rgba(0,0,0,0.6);
-        width: 100%;
-        height: 30px;
-        position: absolute;
-        bottom: 4px;
-        color: #fff;
-    }
