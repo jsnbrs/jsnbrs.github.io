@@ -26,6 +26,12 @@ nav.navbar.navbar-default {
   margin-bottom:0;
   height: 600px;
 }
+.filter-me {
+    -webkit-filter: hue-rotate(75deg);
+    /*filter: hue-rotate(90deg);*/
+  opacity: .9;
+
+}
 #name {
   padding-top: 144px;
 }
@@ -46,7 +52,7 @@ nav.navbar.navbar-default {
 
 .projects {
   height: 1000px;
-  background-color: #333333;
+  background-color: #777777;
   color: white;
   min-width: 100%;
 }
@@ -54,7 +60,12 @@ nav.navbar.navbar-default {
   padding-top: 70px;
   padding-bottom: 78px;
 }
-
+img {
+  opacity: .9;
+}
+img:hover {
+  opacity: .6;
+}
 /* end projects */
 
 .skills {
@@ -76,6 +87,8 @@ nav.navbar.navbar-default {
   height: 500px;
   color: white;
   background-color: #333333;
+  margin: 0 auto;
+  max-width: 100%;
 }
 .contactpad {
   padding-top: 50px;
