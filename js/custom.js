@@ -1,7 +1,7 @@
-$(function(){
+$(function() {
   "use strict";
 
-    $(document).ready(function(){
+    $(document).ready(function() {
       $('body').scrollspy({target: ".navbar", offset: 50});
       $("#navbar a").on('click', function(event) {
         event.preventDefault();
@@ -15,7 +15,7 @@ $(function(){
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 800, function(){
+        }, 800, function() {
 
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
@@ -23,23 +23,36 @@ $(function(){
       });
     });
     //above code is from http://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp
-/**
- * from stackoverflow: http://stackoverflow.com/questions/29646622/set-bootstrap-navbar-transparency-on-scroll
- */
-    function checkScroll(){
+
+// code below from stackoverflow: http://stackoverflow.com/questions/29646622/set-bootstrap-navbar-transparency-on-scroll
+
+    function checkScroll() {
         var startY = $('.navbar').height() * 2;
 
         if($(window).scrollTop() > startY){
             $('.navbar').addClass("scrolled");
-        }else{
+        } else {
             $('.navbar').removeClass("scrolled");
         }
     }
 
-    if($('.navbar').length > 0){
+    if($('.navbar').length > 0) {
         $(window).on("scroll load resize", function(){
             checkScroll();
         });
     }
+});
 
+// code below is from http://stackoverflow.com/questions/17507870/jquery-image-changing-on-hover
+// jQuery to change image on hover for avatar
+
+    var sourceSwap = function() {
+    var $this = $(this);
+    var newSource = $this.data('alt-src');
+    $this.data('alt-src', $this.attr('src'));
+    $this.attr('src', newSource);
+}
+
+$(function () {
+    $('img.img-circle').hover(sourceSwap, sourceSwap);
 });
