@@ -71,6 +71,11 @@ nav.navbar.navbar-default {
 .projectpad {
   padding-bottom: 10rem;
 }
+.thumbnail {
+  border: 0 none;
+  box-shadow: none;
+  background: transparent;
+}
 img {
   opacity: .9;
 }
