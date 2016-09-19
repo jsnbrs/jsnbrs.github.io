@@ -3,10 +3,14 @@ body {
   min-width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 p, div {
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+.pad {
+  padding-top: 42px;
+  padding-bottom: 22px;
 }
 
 /*navbar*/
@@ -47,9 +51,6 @@ nav.navbar.navbar-default {
   height: 500px;
   min-width: 100%;
 }
-.aboutpad {
-  padding-top: 145px;
-}
 
 /* end about */
 
@@ -83,19 +84,6 @@ img:hover {
   opacity: .6;
 }
 /* end projects */
-
-
-.skills {
-  height: 500px;
-  min-width: 10%;
-  width: 100%;
-}
-.skillpad {
-  padding-top: 42px;
-  padding-bottom: 22px;
-}
-
-/* end sills */
 
 /*contact content*/
 
