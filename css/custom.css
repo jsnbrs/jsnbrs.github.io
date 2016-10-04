@@ -128,7 +128,12 @@ nav.navbar.navbar-default {
 .flex-item {
   padding-bottom: 6%;
 }
-
+.img-link {
+  color: rgb(82,165,127);
+}
+a:hover #github {
+  fill: rgb(82,165,127);
+}
 /* contact */
 .contact {
   height: 500px;
