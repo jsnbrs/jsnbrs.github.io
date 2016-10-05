@@ -126,7 +126,7 @@ nav.navbar.navbar-default {
   justify-content: space-around;
 }
 .flex-item {
-  padding-bottom: 6%;
+  padding-bottom: 40px;
 }
 .img-link {
   color: rgb(82,165,127);
