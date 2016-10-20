@@ -13,6 +13,32 @@ p, div {
   padding-bottom: 22px;
 }
 
+@media screen and ( max-width: 700px ) {
+  h2 {
+     font-size: 20px;
+  }
+  h3 {
+     font-size: 15px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .gallery-item img {
+      max-width: 320px;
+      max-height: 240px;
+      height: 240px;
+      width: 350px;
+      padding: 0;
+  }
+  .img-title {
+      max-width: 320px;
+      max-height: 240px;
+      height: 240px;
+      width: 350px;
+      padding: 0;
+  }
+}
+
 /*navbar*/
 
 .navbar {
@@ -25,6 +51,10 @@ p, div {
 nav.navbar.navbar-default {
   border-bottom: none;
 }
+.navbar-collapse.collapse {
+  display: none!important;
+}
+
 /*end navbar*/
 
 /*header*/
@@ -48,6 +78,12 @@ nav.navbar.navbar-default {
 .about {
   height: 500px;
   min-width: 100%;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
 /* end about */
@@ -78,6 +114,7 @@ nav.navbar.navbar-default {
 .gallery-item {
   height: 350px;
   width: 470px;
+  max-width: 100%;
   overflow: hidden;
 }
 .row {
@@ -126,7 +163,7 @@ nav.navbar.navbar-default {
   justify-content: space-around;
 }
 .flex-item {
-  padding-bottom: 6%;
+  padding-bottom: 40px;
 }
 .img-link {
   color: rgb(82,165,127);
