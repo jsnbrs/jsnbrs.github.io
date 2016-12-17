@@ -58,9 +58,6 @@ p, div {
 nav.navbar.navbar-default {
   border-bottom: none;
 }
-.navbar-collapse.collapse {
-  display: none!important;
-}
 
 /*end navbar*/
 
