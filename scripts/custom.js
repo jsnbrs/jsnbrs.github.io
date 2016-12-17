@@ -3,6 +3,9 @@ $(function() {
 
   $('body').scrollspy({target: ".navbar", offset: 50});
 
+  $('#name').delay(1000).fadeIn(2000);
+  $('#lead').delay(1000).fadeIn(2500);
+
   $("#navbar a").on('click', function(event) {
     event.preventDefault();
 
@@ -51,7 +54,6 @@ $(function() {
     $this.data('alt-src', $this.attr('src'));
     $this.attr('src', newSource);
   }
-
 
   $('.gallery-item').hover(function () {
       $(this).find('.img-title').fadeIn(300);

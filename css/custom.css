@@ -77,6 +77,10 @@ nav.navbar.navbar-default {
 }
 #name {
   padding-top: 144px;
+  display: none
+}
+#lead {
+  display: none;
 }
 /*end header*/
 
